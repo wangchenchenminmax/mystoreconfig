@@ -34,4 +34,4 @@ mybatis:
 #logging:
  # level:
  #   root: info
-name: ddt
+name: ddta
