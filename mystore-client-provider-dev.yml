@@ -17,7 +17,7 @@ spring:
   zipkin:
     sender:
       type: web
-    base-url: http://localhost:9411
+    base-url: http://152.136.81.61:9411
   sleuth:
     sampler:
       probability: 1
