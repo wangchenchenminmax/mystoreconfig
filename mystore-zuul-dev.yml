@@ -14,11 +14,17 @@ eureka:
 #  ReadTimeout: 60000  # 单位毫秒数
 #  SocketTimeout: 60000
 zuul:
+  routes:
+    mystore-client-consumer:
+      #service-id: mystore-client-consumer
+      path: /client/**
+      url: http://118.25.27.220:18081
+#zuul:
 #  host:
 #    socket-timeout-millis: 60000
 #    connect-timeout-millis: 60000  
-  routes:
-    mystore-client-consumer: /client/**
+#  routes:
+#    mystore-client-consumer: /client/**
 # /userlogin -> /user/userlogin
 #    dm-xxxx-consumer: /xxxx/**
 #      关闭某个过滤器,写类名字
