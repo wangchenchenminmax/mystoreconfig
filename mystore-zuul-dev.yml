@@ -11,6 +11,9 @@ eureka:
     service-url:
       defaultZone: http://152.136.81.61:18080/eureka/
 zuul:
+  host:
+    socket-timeout-millis: 6000
+    connect-timeout-millis: 6000  
   routes:
     mystore-client-consumer: /client/**
 # /userlogin -> /user/userlogin
