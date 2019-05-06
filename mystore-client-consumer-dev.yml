@@ -1,0 +1,30 @@
+server:
+  port: 18081
+spring:
+  redis:
+    database: 1
+    host: 152.136.81.61
+    port: 6379
+    timeout: 3000ms
+  sleuth:
+    sampler:
+      probability: 1
+  zipkin:
+    base-url: http://152.136.81.61:9411
+    sender:
+      type: web
+eureka:
+  client:
+    service-url:
+      defaultZone: http://152.136.81.61:18080/eureka/
+#是否开启hystrix
+feign:
+  hystrix:
+    enabled: true
+#logging:
+#  level:
+#    root: info
+#针对某个服务进行负载均衡,这个时随机,默认是轮询
+#mystore-client-provider:
+#  ribbon:
+#    NFLoadBalancerRuleClassName: com.netflix.loadbalancer.RandomRule
