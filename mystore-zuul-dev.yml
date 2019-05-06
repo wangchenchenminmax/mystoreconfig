@@ -10,10 +10,13 @@ eureka:
   client:
     service-url:
       defaultZone: http://152.136.81.61:18080/eureka/
+ribbon:
+  ReadTimeout: 60000  # 单位毫秒数
+  SocketTimeout: 60000
 zuul:
   host:
-    socket-timeout-millis: 6000
-    connect-timeout-millis: 6000  
+    socket-timeout-millis: 60000
+    connect-timeout-millis: 60000  
   routes:
     mystore-client-consumer: /client/**
 # /userlogin -> /user/userlogin
