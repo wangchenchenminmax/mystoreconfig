@@ -1,0 +1,21 @@
+server:
+  port: 11111
+spring:
+  redis:
+    database: 1
+    host: 152.136.81.61
+    port: 6379
+    timeout: 3000ms
+eureka:
+  client:
+    service-url:
+      defaultZone: http://152.136.81.61:18080/eureka/
+zuul:
+  routes:
+    mystore-client-consumer: /client/**
+# /userlogin -> /user/userlogin
+#    dm-xxxx-consumer: /xxxx/**
+#      关闭某个过滤器,写类名字
+#  SecondFilter:
+#    pre:
+#      disable: true
