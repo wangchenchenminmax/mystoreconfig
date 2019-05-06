@@ -18,9 +18,9 @@ eureka:
     service-url:
       defaultZone: http://152.136.81.61:18080/eureka/
 #是否开启hystrix
-#feign:
-#  hystrix:
-#    enabled: true
+feign:
+  hystrix:
+    enabled: true
 #logging:
 #  level:
 #    root: info
