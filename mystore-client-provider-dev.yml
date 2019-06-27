@@ -23,10 +23,10 @@ spring:
       probability: 1
 
 eureka:
-  instance:
-    ip-address: 119.3.28.119
-    prefer-ip-address: true
-    instance-id: 119.3.28.119:${server.port}
+#  instance:
+#    ip-address: 119.3.28.119
+#    prefer-ip-address: true
+#    instance-id: 119.3.28.119:${server.port}
   client:
     service-url:
       defaultZone: http://152.136.81.61:18080/eureka/
