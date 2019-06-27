@@ -29,7 +29,7 @@ eureka:
 #    instance-id: 119.3.28.119:${server.port}
   client:
     service-url:
-      defaultZone: http://localhost:18080/eureka/
+      defaultZone: http://152.136.81.61:18080/eureka/
 server:
   port: 18881
 mybatis:
