@@ -5,7 +5,7 @@ spring:
     port: 6379
     timeout: 3000ms
   datasource:
-    url: jdbc:mysql://152.136.81.61:3306/store?useUnicode=true&characterEncoding=utf8&serverTimezone=GMT%2B8&useSSL=FALSE
+    url: jdbc:mysql://152.136.81.61:3306/computer?useUnicode=true&characterEncoding=utf8&serverTimezone=GMT%2B8&useSSL=FALSE
    # url: jdbc:mysql://localhost:3306/store?useUnicode=true&characterEncoding=utf8&serverTimezone=GMT%2B8&useSSL=FALSE
    # url: jdbc:mysql://152.136.81.61:3306/store?useUnicode=true&characterEncoding=utf8&serverTimezone=GMT%2B8&useSSL=FALSE
     username: wangchenchenminmax
