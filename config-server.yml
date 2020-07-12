@@ -1,9 +1,9 @@
 spring:
   rabbitmq:
-    host: 152.136.81.61
+    host: 119.45.52.153
     port: 5672
-    username: guest
-    password: guest
+    username: admin
+    password: 123456
   application:
     name: mystore-config-server
   cloud:
@@ -12,7 +12,7 @@ spring:
         git:
           uri: https://github.com/wangchenchenminmax/mystoreconfig.git
           username: wangchenchenminmax
-          password: 747239395wang
+          password: 211314wccA
           #search-paths: config-file
           #\u6700\u540E\u4E00\u4E2A\u662F\u5206\u652F\u7684\u540D\u5B57,\u6587\u4EF6\u7684\u547D\u540D\u5FC5\u987B\u662Fxx-xx-xx-dev\u4E4B\u7C7B(ps \u8FD9\u53EA\u662F\u4E00\u4E2A\u7B11\u8BDD,\u67D0\u4E2A\u778Eb\u5199\u9519\u5B57\u6BCD\u800C\u5DF2)
           #http://localhost:19500/dm-mystore-zull/dev/mystore-config
@@ -29,12 +29,12 @@ spring:
         #search-paths: config-file
         #force-pull: true
 server:
-  port: 8055
+  port: 8085
 eureka:
   client:
     service-url:
       #defaultZone: http://152.136.81.61:18080/eureka/
-      defaultZone: http://localhost:18080/eureka/
+      defaultZone: http://119.45.52.153:18080/eureka/
 
 management:
   endpoints:
